@@ -17,7 +17,11 @@ class TestFizzbuzz(unittest.TestCase):
 
   def test_return_buzz_for_number_5(self):
        result = fizzbuzz.fizzbuzz(5)
-       self.assertEqual(result, 'Buzz') 
+       self.assertEqual(result, 'Buzz')
+
+  def test_return_buzz_for_multiple_of_5(self):
+      result = fizzbuzz.fizzbuzz(10)
+      self.assertEqual(result, 'Buzz')
 
 
 if __name__ == '__name__':
