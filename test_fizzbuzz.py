@@ -7,6 +7,10 @@ class TestFizzbuzz(unittest.TestCase):
         result = fizzbuzz.fizzbuzz(1)
         self.assertEqual(result,1)
 
+  def test_return_fizz_for_number_3(self):
+        result = fizzbuzz.fizzbuzz(3)
+        self.assertEqual(result,'Fizz')
+
 
 if __name__ == '__name__':
     unittest.main()
