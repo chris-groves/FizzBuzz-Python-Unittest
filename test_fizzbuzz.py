@@ -35,5 +35,9 @@ class TestFizzbuzz(unittest.TestCase):
       result = fizzbuzz.fizzbuzz(7)
       self.assertEqual(result, 7)
 
+  def test_first_array_element_1(self):
+      result = fizzbuzz.array()
+      self.assertEqual(result, 1)
+
 if __name__ == '__name__':
     unittest.main()

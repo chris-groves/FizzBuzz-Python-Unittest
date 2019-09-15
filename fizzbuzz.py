@@ -7,3 +7,11 @@ def fizzbuzz(number):
       return 'Buzz'
     else:
       return number
+
+def array():
+    x = 1
+    array = []
+    while x < 101:
+      array.append(x)
+      x += 1
+    return array[0]
