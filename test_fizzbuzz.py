@@ -49,7 +49,7 @@ class TestFizzbuzz(unittest.TestCase):
       result = fizzbuzz.array[0]
       self.assertEqual(result, 1)
 
-  def test_first_array_element_1(self):
+  def test_99_array_element_100(self):
       fizzbuzz = Fizzbuzz()
       fizzbuzz.loop()
       result = fizzbuzz.array[99]
