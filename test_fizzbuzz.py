@@ -43,13 +43,13 @@ class TestFizzbuzz(unittest.TestCase):
       result = fizzbuzz.fizzbuzz_number(7)
       self.assertEqual(result, 7)
 
-  def test_first_array_element_1(self):
+  def test_array_element_0_returns_1(self):
       fizzbuzz = Fizzbuzz()
       fizzbuzz.loop()
       result = fizzbuzz.array[0]
       self.assertEqual(result, 1)
 
-  def test_99_array_element_100(self):
+  def test_array_element_99_returns_fizz(self):
       fizzbuzz = Fizzbuzz()
       fizzbuzz.loop()
       result = fizzbuzz.array[99]
@@ -60,8 +60,12 @@ class TestFizzbuzz(unittest.TestCase):
       fizzbuzz.loop()
       result = fizzbuzz.array[2]
       self.assertEqual(result, 'Fizz')
-      print(fizzbuzz.array)
 
+  def test_array_element_46_returns_fizzbuzz(self):
+     fizzbuzz = Fizzbuzz()
+     fizzbuzz.loop()
+     result = fizzbuzz.array[44]
+     self.assertEqual(result, 'Fizzbuzz')
 
 if __name__ == '__main__':
     unittest.main()
