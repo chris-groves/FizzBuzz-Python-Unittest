@@ -53,7 +53,15 @@ class TestFizzbuzz(unittest.TestCase):
       fizzbuzz = Fizzbuzz()
       fizzbuzz.loop()
       result = fizzbuzz.array[99]
-      self.assertEqual(result, 100)
+      self.assertEqual(result, 'Buzz')
+
+  def test_array_element_2_returns_fizz(self):
+      fizzbuzz = Fizzbuzz()
+      fizzbuzz.loop()
+      result = fizzbuzz.array[2]
+      self.assertEqual(result, 'Fizz')
+      print(fizzbuzz.array)
+
 
 if __name__ == '__main__':
     unittest.main()

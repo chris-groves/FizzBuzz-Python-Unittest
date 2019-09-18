@@ -13,7 +13,8 @@ class Fizzbuzz:
         return number
 
     def loop(self):
-      x = 1
-      while x < 101:
+      number = 1
+      while number < 101:
+        x = self.fizzbuzz_number(number)
         self.array.append(x)
-        x += 1
+        number += 1
